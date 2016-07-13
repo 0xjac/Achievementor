@@ -1,8 +1,23 @@
 {
-  "name"           : "Achievementor",
-  "version"        : "0.1.0",
-  "main"           : "main.js",
+  "name": "Achievementor",
+  "version": "0.1.0",
+  "main": "main.js",
+  "private": true,
+  "scripts": {
+    "start": "node --harmony ./bin/www"
+  },
+  "dependencies": {
+    "adaro": "^1.0.4",
+    "body-parser": "~1.15.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "dustjs-helpers": "^1.7.3",
+    "dustjs-linkedin": "^2.7.2",
+    "express": "^4.14.0",
+    "morgan": "~1.7.0",
+    "serve-favicon": "~2.3.0"
+  },
   "devDependencies": {
-  "electron-prebuilt": "^1.2.5"
+    "electron-prebuilt": "^1.2.5"
   }
 }
