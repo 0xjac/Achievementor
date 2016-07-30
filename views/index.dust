@@ -1,5 +1,5 @@
 {>"layout"/}
   {<body}
-    <h1>{title|s}</h1>
+    <h1>{title}</h1>
     <p>Welcome to {title}</p>
   {/body}
