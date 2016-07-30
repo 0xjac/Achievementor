@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "adaro": "^1.0.4",
+    "bluebird": "^3.4.1",
     "body-parser": "~1.15.1",
     "cookie-parser": "~1.4.3",
     "debug": "~2.2.0",
@@ -15,7 +16,8 @@
     "dustjs-linkedin": "^2.7.2",
     "express": "^4.14.0",
     "morgan": "~1.7.0",
-    "serve-favicon": "~2.3.0"
+    "serve-favicon": "~2.3.0",
+    "steam-webapi": "^0.6.5"
   },
   "devDependencies": {
     "electron-prebuilt": "^1.2.5"
