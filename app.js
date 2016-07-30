@@ -9,7 +9,8 @@ const logger       = require('morgan');
 const path         = require('path');
 
 const routes = require('./routes/index');
-const users = require('./routes/users');
+const users  = require('./routes/users');
+const steam  = require('./modules/steam');
 
 const app = express();
 
@@ -17,6 +18,15 @@ const app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.engine('dust', dust.dust({}));
 app.set('view engine', 'dust');
+
+steam(function(err, steamClient) {
+  if (err) {
+    app.set('steam', null);
+    console.error("Failed to initialize steam client:\n" + err);
+  }
+  app.set('steam', steamClient);
+  console.log('Steam client set succesfully');
+});
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));

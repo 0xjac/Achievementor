@@ -1,0 +1,10 @@
+{>"layout"/}
+  {<body}
+    <h1>{title}</h1>
+    <p>The user has {gameCount} games!</p>
+    <ul>
+      {#games}
+        <li>{appid}, {name}</li>
+      {/games}
+    </ul>
+  {/body}
