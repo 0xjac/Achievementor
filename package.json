@@ -4,7 +4,8 @@
   "main": "main.js",
   "private": true,
   "scripts": {
-    "start": "node --harmony ./bin/www"
+    "start": "node --harmony ./bin/www",
+    "dev": "NODE_ENV=development nodemon --exec npm start"
   },
   "dependencies": {
     "adaro": "^1.0.4",
